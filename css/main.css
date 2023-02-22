@@ -1,0 +1,44 @@
+#mainVisual {
+    position: relative;
+}
+
+#mainVisual .inner {
+    background-image: url(../img/main_bg.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#mainPromise {
+    position: relative;
+}
+
+
+#mainPromise .inner {
+    background-image: url(../img/sec02_bg.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#franchisee .inner {
+    background-image: url(../img/sec04_bg.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
