@@ -1,9 +1,14 @@
-#mainVisual {
-    position: relative;
+.inner {
+    width: 1200px;
+    margin: 0 auto;
 }
 
-#mainVisual .inner {
-    background-image: url(../img/main_bg.png);
+.f_inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner_bg {
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,33 +17,85 @@
     top: 0;
     right: 0;
     bottom: 0;
+}
+
+#mainVisual .inner_bg {
+    background-image: url(../img/main_bg.png);
+}
+
+#mainPromise .inner_bg {
+    background-image: url(../img/sec02_bg.png);
+}
+
+#franchisee .inner_bg {
+    background-image: url(../img/sec04_bg.png);
+}
+
+/* ----------------------------------------header------------------------------------------- */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    line-height: 150px;
+    text-align: center;
+
+    color: #fff;
+}
+
+#header.on {
+    line-height: 100px;
+    background: #fff;
+    color: #444;
+}
+
+#header .logo {
+    display: block;
+    background-image: url(../img/main_logo.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    width: 250px;
+}
+
+#header.on .logo {
+    background-image: url(../img/logo.png);
+    width: 200px;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 50px;
+    font-family: 'IropkeBatang', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Nanum Gothic', 'Noto Sans', 'sans-serif';
+    color: #363636;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: normal;
+    font-style: normal;
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.m_open {
+    display: none;
+}
+
+#mainVisual {
+    position: relative;
 }
 
 #mainPromise {
     position: relative;
 }
 
-
-#mainPromise .inner {
-    background-image: url(../img/sec02_bg.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* position: absolute; */
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-
-#franchisee .inner {
-    background-image: url(../img/sec04_bg.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* position: absolute; */
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+* {
+    outline: 1px solid tomato;
 }
