@@ -9,7 +9,7 @@
 }
 
 .inner_bg {
-    background-position: 50% 50%;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     /* position: absolute; */
@@ -21,6 +21,7 @@
 
 #mainVisual .inner_bg {
     background-image: url(../img/main_bg.png);
+    height: 100vh;
 }
 
 #mainPromise .inner_bg {
@@ -29,6 +30,7 @@
 
 #franchisee .inner_bg {
     background-image: url(../img/sec04_bg.png);
+    height: 100vh;
 }
 
 /* ----------------------------------------header------------------------------------------- */
@@ -39,15 +41,20 @@
     right: 0;
     z-index: 999;
 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+
     line-height: 150px;
     text-align: center;
 
     color: #fff;
+    font-family: 'Iropke Batang', serif;
 }
 
 #header.on {
-    line-height: 100px;
-    background: #fff;
+    line-height: 70px;
+    background: rgba(255, 255, 255, 0.9);
     color: #444;
 }
 
@@ -65,37 +72,95 @@
     width: 200px;
 }
 
-#header .inner {
-    display: flex;
-    justify-content: space-between;
-}
-
 #header .gnb>ul {
     display: flex;
     gap: 50px;
-    font-family: 'IropkeBatang', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Nanum Gothic', 'Noto Sans', 'sans-serif';
-    color: #363636;
-    font-size: 15px;
-    line-height: 1.6;
-    font-weight: normal;
-    font-style: normal;
-    background-color: rgba(255, 255, 255, 1);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .m_open {
     display: none;
 }
 
+/* --------------------메인-------------------- */
+
+
 #mainVisual {
     position: relative;
 }
+
+#mainVisual .main_text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#mainVisual .main_img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------약속합니다-------------------- */
 
 #mainPromise {
     position: relative;
 }
 
-* {
-    outline: 1px solid tomato;
+#mainPromise .inner_bg {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#mainPromise .img_box {
+    padding-bottom: 50px;
+}
+
+#mainPromise .text_a {
+    padding-bottom: 200px;
+}
+
+/* --------------------재료 클린 매출-------------------- */
+
+#mainBanner .banner {
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+#mainBanner img {
+    width: 100%;
+}
+
+/* --------------------음식 & 가맹슬라이드-------------------- */
+#franchisee .circle_wrap {
+    position: relative;
+}
+
+#franchisee .circle_wrap .food{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    overflow: hidden;
+}
+
+#franchisee .circle_wrap .rotate{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    overflow: hidden;
+}
+
+
+/* * {
+    outline: 1px solid tomato;
+} */
