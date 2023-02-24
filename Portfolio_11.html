@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <title>묵향김치찜</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
@@ -20,30 +21,31 @@
 <body>
     <div class="Wrap">
         <header id="header">
-                <h1 class="logo">
-                    <a href="/"></a>
-                </h1>
-                <nav class="gnb">
-                    <ul>
-                        <li><a href="#!">브랜드이야기</a></li>
-                        <li><a href="#!">메뉴소개</a></li>
-                        <li><a href="#!">매장안내</a></li>
-                        <li><a href="#!">창업안내</a></li>
-                        <li><a href="#!">창업문의</a></li>
-                    </ul>
-                </nav>
-                <div class="m_open">
-                    <button class="m_btn">
-                        <span>mobile open button</span>
-                    </button>
-                </div>
+            <h1 class="logo">
+                <a href="/">a</a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#!">브랜드이야기</a></li>
+                    <li><a href="#!">메뉴소개</a></li>
+                    <li><a href="#!">매장안내</a></li>
+                    <li><a href="#!">창업안내</a></li>
+                    <li><a href="#!">창업문의</a></li>
+                </ul>
+            </nav>
+            <div class="m_open">
+                <button class="m_btn">
+                    <i class="xi-bars"></i>
+                </button>
+            </div>
         </header>
 
         <main>
             <section id="mainVisual" class="sec01">
                 <div class="inner_bg">
                     <div class="main_text">
-                        <img src="./img/main_text.png" alt="">
+                        <img class="pc" src="./img/main_text.png" alt="">
+                        <img class="mobile" src="./img/main_text_m.png" alt="">
                     </div>
                     <div class="main_img">
                         <img src="./img/main_Img.png" alt="">
@@ -57,7 +59,8 @@
                         <img src="./img/sec02_text.png" alt="">
                     </div>
                     <div class="text_a">
-                        <img src="./img/sec02_text02.png" alt="">
+                        <img class="pc" src="./img/sec02_text02.png" alt="">
+                        <img class="mobile" src="./img/sec02_text02_m.png" alt="">
                     </div>
                 </div>
             </section>
@@ -77,60 +80,81 @@
             </section>
             <section id="franchisee" class="sec04">
                 <div class="inner_bg">
-                    <div class="circle_wrap">
+                    <div class="circle_wrap pc">
                         <figure>
                             <img src="./img/sec04_top01.png" alt="" class="food">
+                        </figure>
+                        <figure class="rotate_wrap">
                             <img src="./img/sec04_top02.png" alt="" class="rotate">
                         </figure>
                     </div>
-                    <div class="h2">
+                    <div class="title">
                         <img src="./img/sec04_h2.png" alt="">
                     </div>
-                    <!-- <div class="slide_wrap">
-                        <div class="slide">
-                            <img src="./img/sec04_slide01.png" alt="">
-                            <img src="./img/sec04_slide02.png" alt="">
-                            <img src="./img/sec04_slide03.png" alt="">
-                            <img src="./img/sec04_slide04.png" alt="">
-                            <img src="./img/sec04_slide05.png" alt="">
-                            <img src="./img/sec04_slide06.png" alt="">
-                            <img src="./img/sec04_slide07.png" alt="">
-                            <img src="./img/sec04_slide08.png" alt="">
-                            <img src="./img/sec04_slide09.png" alt="">
-                            <img src="./img/sec04_slide10.png" alt="">
+                    <div class="inner">
+                        <div class="slide_wrap">
+                            <div class="slide">
+                                <figure>
+                                    <img src="./img/sec04_slide01.png" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./img/sec04_slide02.png" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./img/sec04_slide03.png" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./img/sec04_slide04.png" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./img/sec04_slide05.png" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./img/sec04_slide06.png" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./img/sec04_slide07.png" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./img/sec04_slide08.png" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./img/sec04_slide09.png" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./img/sec04_slide10.png" alt="">
+                                </figure>
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </section>
         </main>
         <footer id="footer">
             <div class="f_inner">
-                <div class="left">
-                    <img src="./img/footer_logo.png" alt="">
-                </div>
-                <div class="right">
-                    <ul class="lnk">
-                        <li class="b"><a href="">개인정보 취급방침</a></li>
-                        <li><a href="">이용약관</a></li>
-                    </ul>
-                    <ul class="info_list">
-                        <li>푸른바다찜탕</li>
-                        <li>대표 이찬영</li>
-                        <li>주소 인천광역시 남동구용천로 152번길 18(간석동, 1층일부)</li>
-                    </ul>
-                    <ul class="info_list">
-                        <li>사업자등록번호 131-34-90626</li>
-                        <li>Tel. <a href="tel:1644-3837">1644-3837</a></li>
-                    </ul>
+                <div class="footer_wrap">
+                    <div class="left">
+                        <img src="./img/footer_logo.png" alt="">
+                    </div>
+                    <div class="right">
+                        <ul class="lnk">
+                            <li class="b" style="font-weight: bold;"><a href="">개인정보 취급방침</a></li>
+                            <li><a href="">이용약관</a></li>
+                        </ul>
+                        <ul class="info_list">
+                            <li>푸른바다찜탕</li>
+                            <li>대표 이찬영</li>
+                            <li>주소 인천광역시 남동구용천로 152번길 18(간석동, 1층일부)</li>
+                        </ul>
+                        <ul class="info_list last">
+                            <li>사업자등록번호 131-34-90626</li>
+                            <li>Tel. <a href="tel:1644-3837">1644-3837</a></li>
+                        </ul>
+                        <p class=" copyright">Copyright(C) 묵향 All Rights Reserved.</p>
+                    </div>
                 </div>
             </div>
-            <span style="color: rgb(195, 195, 195); font-size: 12px;"></span>
-            <p class=" copyright">Copyright(C) 묵향 All Rights Reserved.</p>
-    </div>
-    </div>
-    </footer>
-    <div class="to_top">
-        <button><i class="xi-arrow-top"></i></button>
+        </footer>
     </div>
 </body>
 
